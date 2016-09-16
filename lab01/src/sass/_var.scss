@@ -1,0 +1,32 @@
+$c-text: #444;
+$c-lgray-text: #bbb;
+$c-text-lighter: $c-text + #222222; 
+$c-link: #4169E1;
+$c-link-hover: #6495ED;
+
+$f-text: 'Open Sans', sans-serif; 
+$f-captions: 'PT Serif', serif;
+
+$basic-lh: 1.3em;
+$basic-font-size: 11pt;
+
+
+
+@mixin clearfix() { 
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin overlay ($top: 0, $right: 0, $bottom: 0, $left: 0) { 
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	position: absolute;
+}

@@ -1,0 +1,42 @@
+/*
+	basic text output styles
+*/
+
+body {
+	font-family: $f-text;
+	font-size: $basic-font-size;
+	line-height: $basic-lh;
+	color: $c-text;
+}
+
+h1 {
+	font-family: $f-captions;
+}
+
+h2, h3, h4, h5, h6, .caption {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+h1 {
+	color: #fff;
+	font-size: 21pt;
+	line-height: 1.4em;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 20pt;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+}
+
+p+p{
+	margin-top: 10px;
+}
+
+a {
+	color: $c-link;
+	text-decoration: none;
+	&:hover {
+		color: $c-link-hover;
+	}
+}

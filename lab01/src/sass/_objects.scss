@@ -1,0 +1,100 @@
+/* 
+	complex objects like navigation, forms, buttons etc.
+*/
+
+nav {
+	margin: 40px 0;
+	ul#nav {
+		font-size: 0;
+		display: block;
+		li {
+			position: relative;
+			font-size: 1rem; 
+			display: block;
+			a {
+				display: inline-block;
+				padding: 10px 0;
+				color: #ccc;
+			}
+			&.current {
+				&:after {
+					content: "";
+					position: absolute;
+					right: -21px;
+					top: 12px;
+					height: 14px;
+					width: 8px;
+					background-position: 100% 0;
+					background-image: url(../img/current.png);
+				}
+				a{
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+#sticky {
+	left: 0;
+	width: 30%;
+	margin-top: 180px;
+	padding: 20px;
+	position: absolute;
+}
+
+#soc {
+	color: $c-lgray-text;
+	width: 30%;
+	text-align: center;
+	z-index: 1;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	ul {
+		padding: 10px 0 20px;
+	}
+	li {
+		display: inline-block;
+		a {
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: block;
+			height: 40px;
+			width: 40px;
+			opacity: 0.4;
+			transition: opacity 0.2s;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		&+li {
+			margin-left: 16px;
+		}
+	}
+}
+
+#avatar {
+	position: absolute;
+	width: 30%;
+	padding: 10px 20px;
+	display: block;
+	img{
+		width: 160px;
+		height: 160px;
+		margin: 10px auto;
+	}
+
+}
+
+#albumn {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: rgba(0,0,0,.05);
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+
+.fotorama__nav {
+	margin-top: 20px;
+}
