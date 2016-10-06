@@ -7,6 +7,7 @@ html {
 }
 body {
 	height: 100%;
+	min-width: 900px;
 }
 
 .wrap {
@@ -17,12 +18,13 @@ body {
 	}
 	background-image: url(../img/bg.jpg);
 	background-attachment: fixed;
-	background-size: auto 105%;
+	background-size: auto 106%;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
 
 aside {
+	// min-width: 300px;
 	background-color: rgba(22,33,44,.9);
 	width: 30%;
 	display: inline-block;
