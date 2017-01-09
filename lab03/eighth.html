@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Задание 8</title>
+</head>
+<body>
+	<p id="task-8">
+		*курсив* **не курсив****111*222*111**
+	</p>
+	<script>
+		var obj = document.getElementById("task-8");
+		obj.innerHTML = obj.innerHTML.replace(/(^|[^*])\*([^*].+?[^*])\*(?!\*)/ig,"$1<i>$2</i>");
+	</script>
+</body>
+</html>
